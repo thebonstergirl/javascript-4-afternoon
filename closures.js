@@ -209,13 +209,16 @@ function secretNumber() {
 
 function timeOutCounter() {
   for (var i = 0; i <= 5; i++) {
-    num = 0;
+    countMe(i)};
+    
+    function countMe(i){
     setTimeout(function() {
-         return console.log(num++);
+         return console.log(i);
     },
     i * 1000);
   }
 }
+
 
 var thisThing = timeOutCounter();
 
